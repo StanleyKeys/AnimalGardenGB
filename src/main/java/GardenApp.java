@@ -7,6 +7,7 @@ public class GardenApp {
 }
 
 class Animal {
+    int id;
 
 }
 
