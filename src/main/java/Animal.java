@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public abstract class Animal {
-    int id = 0;
+
     int amount;
     String name;
     String dateOfBirth;
@@ -15,15 +15,14 @@ public abstract class Animal {
 
     }
     public Animal(String name, String dateOfBirth) {
-        this.id += 1;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         getLegsAndAmount();
     }
 
     public String getInfo() {
-        return String.format("ID: %d, Name: %s  BirthDate: %s  Legs: %d, Amount: %d",
-                this.id, this.name, this.dateOfBirth, this.legs, this.amount);
+        return String.format("Name: %s \nBirthDate: %s \nLegs: %d \nAmount: %d",
+                this.name, this.dateOfBirth, this.legs, this.amount);
     }
 
 

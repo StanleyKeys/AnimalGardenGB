@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GardenApp.java" afterDir="false" />
+    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.2 &#10;Reforged classes to separate files, created showMethods.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AppSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Donkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GardenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GardenApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hamster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,28 @@
       <option name="presentableId" value="Default" />
       <updated>1681215078232</updated>
     </task>
+    <task id="LOCAL-00001" summary="v 0.1 &#10;Created app, classes for animals">
+      <created>1681222733989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681222733989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="v 0.1 &#10;Created app, classes for animals">
+      <created>1681223073354</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681223073354</updated>
+    </task>
+    <task id="LOCAL-00003" summary="v 0.2 &#10;Reforged classes to separate files, created showMethods.">
+      <created>1681301074845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681301074845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,5 +97,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v 0.1 &#10;Created app, classes for animals" />
+    <MESSAGE value="v 0.2 &#10;Reforged classes to separate files, created showMethods." />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.2 &#10;Reforged classes to separate files, created showMethods." />
   </component>
 </project>

@@ -6,6 +6,6 @@ public class Dog extends Pet {
 
     @Override
     public String getInfo() {
-        return super.getInfo();
+        return super.getInfo() + " \nMasterName: " + masterName;
     }
 }
