@@ -1,44 +1,13 @@
 
 
 public class GardenApp {
+
     public static void main(String[] args) {
-
+        Dog d = new Dog("Buddy", "20.10.2000", "James");
+        showAnimal(d.getInfo());
     }
-}
 
-class Animal {
-    int id;
-
-}
-
-class Pet extends Animal {
-
-}
-
-class Pack extends Animal {
-
-}
-
-class Dog extends Pet {
-
-}
-
-class Cat extends Pet {
-
-}
-
-class Hamster extends Pet {
-
-}
-
-class Horse extends Pack {
-
-}
-
-class Camel extends Pack {
-
-}
-
-class Donkey extends Pack {
-
+    public static void showAnimal(String s) {
+        System.out.println(s);
+    }
 }
