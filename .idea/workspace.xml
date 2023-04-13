@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.4 &#10;Reforged CommandSystem.java and its Methods.">
+    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.5 &#10;Rebuilt GardenApp.java&#10;- added methods: showPetAnimals() , showPackAnimals() , addCommand().">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GardenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GardenApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681361207702</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v 0.5 &#10;Rebuilt GardenApp.java&#10;- added methods: showPetAnimals() , showPackAnimals() , addCommand().">
+      <created>1681367725394</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681367725394</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +123,7 @@
     <MESSAGE value="v 0.2 &#10;Reforged classes to separate files, created showMethods." />
     <MESSAGE value="v 0.3 &#10;Reforged CommandSystem.java and its Methods." />
     <MESSAGE value="v 0.4 &#10;Reforged CommandSystem.java and its Methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="v 0.4 &#10;Reforged CommandSystem.java and its Methods." />
+    <MESSAGE value="v 0.5 &#10;Rebuilt GardenApp.java&#10;- added methods: showPetAnimals() , showPackAnimals() , addCommand()." />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.5 &#10;Rebuilt GardenApp.java&#10;- added methods: showPetAnimals() , showPackAnimals() , addCommand()." />
   </component>
 </project>

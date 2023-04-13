@@ -5,4 +5,5 @@ public abstract class Pet extends Animal {
         super(name, dateOfBirth);
         this.masterName = masterName;
     }
+
 }

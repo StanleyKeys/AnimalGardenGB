@@ -20,6 +20,7 @@ public abstract class Animal {
         getLegsAndAmount();
     }
 
+
     public String getInfo() {
         return String.format("Name: %s \nBirthDate: %s \nLegs: %d \nAmount: %d",
                 this.name, this.dateOfBirth, this.legs, this.amount);
