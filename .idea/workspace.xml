@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.2 &#10;Reforged classes to separate files, created showMethods.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AppSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Commands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Donkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GardenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GardenApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hamster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Horse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +43,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/GeekBrains/IdeaProjects/AnimalGardenGB",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
