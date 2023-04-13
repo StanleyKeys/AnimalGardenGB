@@ -41,17 +41,17 @@ public class GardenApp {
         if (userNumber == 1) {
             showAllAnimals();
         } else if (userNumber == 2) {
-            TODO();
+            showPetAnimals();
         } else if (userNumber == 3) {
-            TODO();
+            showPackAnimals();
         } else if (userNumber == 4) {
-            TODO();
+            addAnimal();
         } else if (userNumber == 5) {
-            TODO();
+            deleteAnimal();
         } else if (userNumber == 6) {
             addCommand();
         } else if (userNumber == 7) {
-            TODO();
+            sayCommand();
         } else if (userNumber == 8) {
             showAllCommands();
         } else if (userNumber == 9) {
@@ -92,23 +92,51 @@ public class GardenApp {
         return dataBase;
     }
 
-
-    public void showAllCommands() {
-        CommandSystem cs = new CommandSystem();
-        cs.showAllCommands();
-        mainMenu();
-    }
-
-    public void addCommand() {
-        CommandSystem cs = new CommandSystem();
-        cs.addCommand();
-        mainMenu();
-    }
-    public void showAllAnimals() {
+    public void showAllAnimals() {                          // 1. Показать всех животных
         for (Animal animal : allDataBase) {
             System.out.println(animal.getInfo());
             System.out.println(" ");
         }
+        mainMenu();
+    }
+
+    public void showPetAnimals() {                          // 2. Показать домашних животных
+        for (Animal animal : petDataBase) {
+            System.out.println(animal.getInfo());
+            System.out.println(" ");
+        }
+        mainMenu();
+    }
+
+    public void showPackAnimals() {                         // 3. Показать вьючных животных
+        for (Animal animal : packDataBase) {
+            System.out.println(animal.getInfo());
+            System.out.println(" ");
+        }
+        mainMenu();
+    }
+
+    public void addAnimal() {                               // 4. Добавить животное
+        TODO();
+    }
+
+    public void deleteAnimal() {                            // 5. Удалить животное
+        TODO();
+    }
+
+
+    public void addCommand() {                              // 6. Добавить команду
+        CommandSystem cs = new CommandSystem();
+        cs.addCommand();
+        mainMenu();
+    }
+
+    public void sayCommand() {                              // 7. Сказать команду
+        TODO();
+    }
+    public void showAllCommands() {
+        CommandSystem cs = new CommandSystem();             // 8. Показать все команды
+        cs.showAllCommands();
         mainMenu();
     }
 

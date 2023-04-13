@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.3 &#10;Reforged CommandSystem.java and its Methods.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/subMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CommandSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandSystem.java" afterDir="false" />
+    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.4 &#10;Reforged CommandSystem.java and its Methods.">
       <change beforePath="$PROJECT_DIR$/src/main/java/GardenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GardenApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681355988533</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v 0.4 &#10;Reforged CommandSystem.java and its Methods.">
+      <created>1681361207702</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681361207702</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +112,7 @@
     <MESSAGE value="v 0.1 &#10;Created app, classes for animals" />
     <MESSAGE value="v 0.2 &#10;Reforged classes to separate files, created showMethods." />
     <MESSAGE value="v 0.3 &#10;Reforged CommandSystem.java and its Methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="v 0.3 &#10;Reforged CommandSystem.java and its Methods." />
+    <MESSAGE value="v 0.4 &#10;Reforged CommandSystem.java and its Methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.4 &#10;Reforged CommandSystem.java and its Methods." />
   </component>
 </project>
