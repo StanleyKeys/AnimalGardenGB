@@ -1,7 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class CommandSystem {
+    //GardenApp ga = new GardenApp();
+    //subMenu sm = new subMenu();
 
+    List<String> commandList = new ArrayList<>();
     public CommandSystem() {
-
+        commandList.add("GO");
+        commandList.add("STOP");
+        commandList.add("JUMP");
+        commandList.add("RUN");
+        commandList.add("VOICE");
     }
 
 
@@ -25,9 +36,40 @@ public class CommandSystem {
         return String.format("%s can VOICE", name);
     }
 
-    public void addCommand(String name, String commandName) {
-        String s = String.format("%s can %s", name, commandName);
+    public void addCommand() {
+        System.out.println("Input your command: ");
+        Scanner sc = new Scanner(System.in);
+        String newCommand = sc.nextLine();
+        commandList.add(newCommand);                // Добавляем новую команду в список.
+        String result = String.format("\nThe command %s is successfuly added to Command List\n", newCommand);
+        System.out.println(result);
+
+        //showMainMenu();                            // возращаемся в главное меню.
     }
 
+    public void showMainMenu() {
+        System.out.println("Вернуться в главное меню? \n");
+        Scanner sc = new Scanner(System.in);
+        String result = sc.nextLine();
+        if (result.equals("1") || result.equals("yes")) {
+            GardenApp ga = new GardenApp();
+            ga.mainMenu();
+        } else if (result.equals("2") || result.equals("no") || result.equals("exit")) {
+            System.exit(0);
+
+        } else {
+            System.out.println("Choose the answer, please \n");
+            showMainMenu();
+        }
+
+    }
+    public void showAllCommands() {
+        System.out.println("The command list : \n");
+        for (String s : commandList) {
+            System.out.println(s);
+
+        }
+        //showMainMenu();
+    }
 
 }
