@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 import static java.lang.Integer.parseInt;
 
 public class GardenApp {
+    CommandSystem cs = new CommandSystem();
 
     List<Animal> petDataBase = createPetDataBase();
     List<Animal> packDataBase = createPackDataBase();
@@ -95,7 +97,7 @@ public class GardenApp {
     public void showAllAnimals() {                          // 1. Показать всех животных
         for (Animal animal : petDataBase) {
             System.out.println(animal.getInfo());
-
+            System.out.println(" ");
         }
         for (Animal animal : packDataBase) {
             System.out.println(animal.getInfo());
@@ -134,30 +136,36 @@ public class GardenApp {
         switch (result) {
             case "1", "домашнее" -> {
                 System.out.println(
-                        "Разновидность: \n" +
-                                "1. Кошка" +
-                                "2. Собака" +
-                                "3. Хомяк" +
-                                "4. Назад"
+                        """
+                                Разновидность:\s
+                                1. Кошка\s
+                                2. Собака\s
+                                3. Хомяк\s
+                                4. Назад\s
+                                """
                 );
 
                 String variety = sc.nextLine().toLowerCase();
-                String[] petArray = addPetSystem();
+                String[] petArray = new String[3];
+
 
                 switch (variety) {
                     case "1" -> {
+                        petArray = addPetSystem();
                         Cat cat1 = new Cat(petArray[0], petArray[1], petArray[2]);
                         petDataBase.add(cat1);
                         System.out.println("Животное успешно добавлено.");
                         mainMenu();
                     }
                     case "2" -> {
+                        petArray = addPetSystem();
                         Dog dog1 = new Dog(petArray[0], petArray[1], petArray[2]);
                         petDataBase.add(dog1);
                         System.out.println("Животное успешно добавлено.");
                         mainMenu();
                     }
                     case "3" -> {
+                        petArray = addPetSystem();
                         Hamster hamster1 = new Hamster(petArray[0], petArray[1], petArray[2]);
                         petDataBase.add(hamster1);
                         System.out.println("Животное успешно добавлено.");
@@ -169,29 +177,34 @@ public class GardenApp {
             }
             case "2", "вьючное" -> {
                 System.out.println(
-                        "Разновидность: \n" +
-                                "1. Лошадь" +
-                                "2. Верблюд" +
-                                "3. Осел" +
-                                "4. Назад"
+                        """
+                                Разновидность:\s
+                                1. Лошадь\s
+                                2. Верблюд\s
+                                3. Осел\s
+                                4. Назад\s
+                                """
                 );
                 String variety = sc.nextLine().toLowerCase();
-                String[] petArray = addPackSystem();
+                String[] petArray = new String[5];
 
                 switch (variety) {
                     case "1" -> {
+                        petArray = addPackSystem();
                         Horse horse1 = new Horse(petArray[0], petArray[1], petArray[2], petArray[3], parseInt(petArray[4]));
                         packDataBase.add(horse1);
                         System.out.println("Животное успешно добавлено.");
                         mainMenu();
                     }
                     case "2" -> {
+                        petArray = addPackSystem();
                         Camel camel1 = new Camel(petArray[0], petArray[1], petArray[2], petArray[3], parseInt(petArray[4]));
                         packDataBase.add(camel1);
                         System.out.println("Животное успешно добавлено.");
                         mainMenu();
                     }
                     case "3" -> {
+                        petArray = addPackSystem();
                         Donkey donkey1 = new Donkey(petArray[0], petArray[1], petArray[2], petArray[3], parseInt(petArray[4]));
                         packDataBase.add(donkey1);
                         System.out.println("Животное успешно добавлено.");
@@ -207,7 +220,7 @@ public class GardenApp {
                 addAnimal();
             }
         }
-        }
+    }
 
 
     public String[] addPetSystem() {
@@ -247,23 +260,49 @@ public class GardenApp {
     }
 
     public void deleteAnimal() {                            // 5. Удалить животное
-        TODO();
+        System.out.println("Введите имя животного, которого нужно удалить: \n");
+        Scanner sc = new Scanner(System.in);
+        String userInput = sc.nextLine();
+
+        for (Animal pet : petDataBase) {
+            if (userInput.equals(pet.name)) {
+                petDataBase.remove(pet);
+                System.out.println("Животное успешно удалено");
+                mainMenu();
+            }
+        }
+        for (Animal pack : packDataBase) {
+            if (userInput.equals(pack.name)) {
+                packDataBase.remove(pack);
+                System.out.println("Животное успешно удалено");
+                mainMenu();
+            } else {
+                System.out.println("Животного с таким имененм нет в БД. \n");
+                mainMenu();
+            }
+        }
     }
 
 
     public void addCommand() {                              // 6. Добавить команду
-        CommandSystem cs = new CommandSystem();
         cs.addCommand();
         mainMenu();
     }
 
     public void sayCommand() {                              // 7. Сказать команду
-        TODO();
+        Random r = new Random();
+        int randomCommand = r.nextInt(0, cs.commandList.size()-1);
+        List<Animal> l = new ArrayList<>();
+        l.addAll(petDataBase);
+        l.addAll(packDataBase);
+        int randomAnimal = r.nextInt(0, l.size() - 1);
+        String result = cs.USERCOMMAND(l.get(randomAnimal).name, cs.commandList.get(randomCommand));
+        System.out.println(result);
+        mainMenu();
     }
 
     public void showAllCommands() {
-        CommandSystem cs = new CommandSystem();             // 8. Показать все команды
-        cs.showAllCommands();
+        cs.showAllCommands();                               // 8. Показать все команды
         mainMenu();
     }
 

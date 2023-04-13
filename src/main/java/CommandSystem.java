@@ -36,6 +36,10 @@ public class CommandSystem {
         return String.format("%s can VOICE", name);
     }
 
+    public String USERCOMMAND(String name, String userCommand) {
+        return String.format("%s can %s", name, userCommand);
+    }
+
     public void addCommand() {
         System.out.println("Input your command: ");
         Scanner sc = new Scanner(System.in);
@@ -65,10 +69,14 @@ public class CommandSystem {
     }
     public void showAllCommands() {
         System.out.println("The command list : \n");
+        int counter = 1;
         for (String s : commandList) {
-            System.out.println(s);
+            String temp = String.format("%d. %s ",counter, s);
+            System.out.println(temp);
+            counter += 1;
 
         }
+        System.out.println(" ");
         //showMainMenu();
     }
 
