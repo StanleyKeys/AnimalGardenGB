@@ -7,6 +7,7 @@ public class CommandSystem {
     //subMenu sm = new subMenu();
 
     List<String> commandList = new ArrayList<>();
+
     public CommandSystem() {
         commandList.add("GO");
         commandList.add("STOP");
@@ -67,11 +68,12 @@ public class CommandSystem {
         }
 
     }
+
     public void showAllCommands() {
         System.out.println("The command list : \n");
         int counter = 1;
         for (String s : commandList) {
-            String temp = String.format("%d. %s ",counter, s);
+            String temp = String.format("%d. %s ", counter, s);
             System.out.println(temp);
             counter += 1;
 

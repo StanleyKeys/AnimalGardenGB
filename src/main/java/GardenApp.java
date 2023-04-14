@@ -7,12 +7,10 @@ import static java.lang.Integer.parseInt;
 
 public class GardenApp {
     CommandSystem cs = new CommandSystem();
-
     List<Animal> petDataBase = createPetDataBase();
     List<Animal> packDataBase = createPackDataBase();
+
     //List<Animal> allDataBase = createDataBase(petDataBase, packDataBase);
-
-
     public static void main(String[] args) {
         GardenApp ga = new GardenApp();
         ga.mainMenu();
@@ -22,8 +20,7 @@ public class GardenApp {
         System.out.println(s);
     }
 
-
-    public void mainMenu() {
+    public void mainMenu() {                                // Метод главного меню
         System.out.println(
                 """
                         Выберите пункт меню:\s
@@ -69,7 +66,7 @@ public class GardenApp {
         System.out.println("- = This feature is under development = -");
     }
 
-    protected List<Animal> createPetDataBase() {               // Создание БД животных
+    protected List<Animal> createPetDataBase() {               // Создание БД домашних
         List<Animal> dataBase = new ArrayList<>();
         Cat cat1 = new Cat("Kitty", "01.01.2001", "John");
         Dog dog1 = new Dog("Buddy", "20.10.2000", "James");
@@ -78,7 +75,7 @@ public class GardenApp {
         return dataBase;
     }
 
-    protected List<Animal> createPackDataBase() {               // Создание БД животных
+    protected List<Animal> createPackDataBase() {               // Создание БД вьючных
         List<Animal> dataBase = new ArrayList<>();
         Horse horse1 = new Horse("Mustang", "01.01.2001", "yes", "no", 100);
         Donkey donkey1 = new Donkey("Mul", "20.10.2000", "yes", "no", 250);
@@ -131,8 +128,10 @@ public class GardenApp {
                         3. Главное меню\s
                         """
         );
+
         Scanner sc = new Scanner(System.in);
         String result = sc.nextLine().toLowerCase();
+
         switch (result) {
             case "1", "домашнее" -> {
                 System.out.println(
@@ -146,8 +145,7 @@ public class GardenApp {
                 );
 
                 String variety = sc.nextLine().toLowerCase();
-                String[] petArray = new String[3];
-
+                String[] petArray;
 
                 switch (variety) {
                     case "1" -> {
@@ -173,7 +171,7 @@ public class GardenApp {
                     }
                     default -> addAnimal();
                 }
-                break;
+
             }
             case "2", "вьючное" -> {
                 System.out.println(
@@ -185,34 +183,35 @@ public class GardenApp {
                                 4. Назад\s
                                 """
                 );
+
                 String variety = sc.nextLine().toLowerCase();
-                String[] petArray = new String[5];
+                String[] packArray;
 
                 switch (variety) {
                     case "1" -> {
-                        petArray = addPackSystem();
-                        Horse horse1 = new Horse(petArray[0], petArray[1], petArray[2], petArray[3], parseInt(petArray[4]));
+                        packArray = addPackSystem();
+                        Horse horse1 = new Horse(packArray[0], packArray[1], packArray[2], packArray[3], parseInt(packArray[4]));
                         packDataBase.add(horse1);
                         System.out.println("Животное успешно добавлено.");
                         mainMenu();
                     }
                     case "2" -> {
-                        petArray = addPackSystem();
-                        Camel camel1 = new Camel(petArray[0], petArray[1], petArray[2], petArray[3], parseInt(petArray[4]));
+                        packArray = addPackSystem();
+                        Camel camel1 = new Camel(packArray[0], packArray[1], packArray[2], packArray[3], parseInt(packArray[4]));
                         packDataBase.add(camel1);
                         System.out.println("Животное успешно добавлено.");
                         mainMenu();
                     }
                     case "3" -> {
-                        petArray = addPackSystem();
-                        Donkey donkey1 = new Donkey(petArray[0], petArray[1], petArray[2], petArray[3], parseInt(petArray[4]));
+                        packArray = addPackSystem();
+                        Donkey donkey1 = new Donkey(packArray[0], packArray[1], packArray[2], packArray[3], parseInt(packArray[4]));
                         packDataBase.add(donkey1);
                         System.out.println("Животное успешно добавлено.");
                         mainMenu();
                     }
                     default -> addAnimal();
                 }
-                break;
+
             }
             case "3", "exit" -> mainMenu();
             default -> {
@@ -221,7 +220,6 @@ public class GardenApp {
             }
         }
     }
-
 
     public String[] addPetSystem() {
         String[] petArray = new String[3];
@@ -291,7 +289,7 @@ public class GardenApp {
 
     public void sayCommand() {                              // 7. Сказать команду
         Random r = new Random();
-        int randomCommand = r.nextInt(0, cs.commandList.size()-1);
+        int randomCommand = r.nextInt(0, cs.commandList.size() - 1);
         List<Animal> l = new ArrayList<>();
         l.addAll(petDataBase);
         l.addAll(packDataBase);
