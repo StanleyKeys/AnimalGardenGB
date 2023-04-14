@@ -12,6 +12,7 @@ public class GardenApp {
 
     //List<Animal> allDataBase = createDataBase(petDataBase, packDataBase);
     public static void main(String[] args) {
+        System.out.println("\n\n       Добро пожаловать в питомник для животных 'Уши! Лапы! Хвост! Копыта и Горб!'       \n\n");
         GardenApp ga = new GardenApp();
         ga.mainMenu();
     }

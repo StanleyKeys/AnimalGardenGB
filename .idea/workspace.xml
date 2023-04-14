@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.8 &#10;Rebuilt GardenApp.java&#10;- added methods: addCommand(), sayCommand();">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CommandSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandSystem.java" afterDir="false" />
+    <list default="true" id="c9befb5d-ca16-4484-ac44-e57418540488" name="Changes" comment="v 0.85 Hot-Fix &#10;- deleted some unnecessary code-lines (&quot;arrays[]&quot;, &quot;break;&quot;, etc)">
       <change beforePath="$PROJECT_DIR$/src/main/java/GardenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GardenApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "F:/GeekBrains/IdeaProjects/AnimalGardenGB",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/GeekBrains/IdeaProjects/AnimalGardenGB&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\GeekBrains\IdeaProjects\AnimalGardenGB\src\main\java" />
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681373660535</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="v 0.85 Hot-Fix &#10;- deleted some unnecessary code-lines (&quot;arrays[]&quot;, &quot;break;&quot;, etc)">
+      <created>1681443486831</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681443486831</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +144,7 @@
     <MESSAGE value="v 0.5 &#10;Rebuilt GardenApp.java&#10;- added methods: showPetAnimals() , showPackAnimals() , addCommand()." />
     <MESSAGE value="v 0.6 &#10;Rebuilt GardenApp.java&#10;- added methods: addAnimal(), addPackSystem(), addPetSystem()" />
     <MESSAGE value="v 0.8 &#10;Rebuilt GardenApp.java&#10;- added methods: addCommand(), sayCommand();" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 0.8 &#10;Rebuilt GardenApp.java&#10;- added methods: addCommand(), sayCommand();" />
+    <MESSAGE value="v 0.85 Hot-Fix &#10;- deleted some unnecessary code-lines (&quot;arrays[]&quot;, &quot;break;&quot;, etc)" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.85 Hot-Fix &#10;- deleted some unnecessary code-lines (&quot;arrays[]&quot;, &quot;break;&quot;, etc)" />
   </component>
 </project>
